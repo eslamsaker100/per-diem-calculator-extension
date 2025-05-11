@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  width: 320px;
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 80px;
+}
+
+h1 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.form {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #8DC63F;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #7CB528;
+}
+
+#result {
+  margin-top: 15px;
+  background: #F1FAE5;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.disclaimer {
+  font-size: 10px;
+  display: block;
+  margin-top: 8px;
+  color: #666;
+  text-align: center;
+}
+
+.cta-footer {
+  background: #8DC63F;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.cta-footer:hover {
+  background: #7CB528;
+}
+
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+body.dark input, body.dark select, body.dark textarea {
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+body.dark #result {
+  background: #333;
+  color: #eee;
+}
+
+body.dark .cta-footer {
+  background: #555;
+}
+
+.destinations-block, .details-block, .result-block {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.destination-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.destination-row select,
+.destination-row input {
+  flex: 1;
+}
+
+.destination-row button.fav-btn,
+.destination-row button.remove-row {
+  flex: none;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.more-options summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#copy-result {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.destination-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+.destination-row select {
+  width: 40%;
+}
+
+.destination-row input.rate,
+.destination-row input.days {
+  width: 20%;
+}
+
+.destination-row button.fav-btn,
+.destination-row button.remove-row {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 14px;
+}
+
+#copy-result {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.destination-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.destination-row label {
+  font-size: 12px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.destination-row select,
+.destination-row input {
+  width: 32%;
+}
+
+.destination-row button.remove-row,
+.destination-row button.save-fav {
+  width: 100%;
+  padding: 4px;
+  font-size: 12px;
+}

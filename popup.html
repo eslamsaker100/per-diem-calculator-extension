@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Per Diem Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Global Travel Partners Logo" class="logo">
+    <h1>Global Travel Partners</h1>
+  </div>
+
+  <div class="form">
+    <div class="destinations-block">
+      <label>Destinations:</label>
+      <div id="destinations-container">
+        <!-- Initial destination row inserted by JS -->
+      </div>
+      <button id="add-destination">+ Add Destination</button>
+    </div>
+
+    <div class="details-block">
+      <label for="currency">Currency:</label>
+      <select id="currency">
+        <option value="$">USD ($)</option>
+        <option value="€">EUR (€)</option>
+        <option value="£">GBP (£)</option>
+        <option value="AED">AED (د.إ)</option>
+      </select>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" rows="2"></textarea>
+    </div>
+
+    <div class="result-block">
+      <button id="calculate">Calculate Total</button>
+      <div id="result">
+        Total Per Diem: $0
+      </div>
+      <button id="copy-result">Copy Result</button>
+      <small id="policy-warning" style="display:none; color: red;">⚠️ Rate exceeds company policy limit!</small>
+    </div>
+
+    <details class="more-options">
+      <summary>More Options</summary>
+      <button id="export">Download Estimate</button>
+      <button id="print">Print</button>
+      <button id="toggle-dark">Toggle Dark Mode</button>
+    </details>
+  </div>
+
+  <a class="cta-footer" href="https://globaltravelpartners.travel" target="_blank">Plan your next business trip with us</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
